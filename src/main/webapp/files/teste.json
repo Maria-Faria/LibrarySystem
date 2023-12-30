@@ -1,0 +1,13 @@
+{
+  "livros":[
+  {
+    "titulo": 1984,
+    "autor": "George Orwell",
+    "status": "Disponível",
+    "classificacao": "*****"
+  },
+  
+  {"titulo": "Orgulho e Preconceito",
+    "autor": "Jane Austen",
+    "classificacao": "❤️"}]
+}

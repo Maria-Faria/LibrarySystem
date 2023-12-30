@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    height: 100vh;
+    background-color: #1F8AED;
+}
+
+/* Menu */
+
+nav.menu {
+    width: 70px;
+    height: 100%;
+    background-color: #87CEFA;
+    padding: 40px 0 40px 0.5%;
+    box-shadow: 4px 0 0 #6959CD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+span.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48;
+
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item {
+    transition: .2s;
+}
+
+ul li.ativo {
+    background-color: #6959CD;
+}
+
+ul li.item:hover {
+    background: #6959CD;
+}
+
+ul li.item a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+ul li.item a .txt-link {
+    margin-left: 60px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu.expandir .txt-link {
+    margin-left: 30px;
+    opacity: 1;
+}
+
+ul li.item a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/*Barra de pesquisa e login*/
+
+.searchLogin {
+    width: 72%;
+    margin-left: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBox {
+    width: 800px;
+    height: 40px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 3px solid #6959CD;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.searchBox .searchIcon {
+    min-width: 780px;
+    height: 35px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.searchBox .searchIcon i {
+    font-size: 25px;
+}
+
+.searchBox .inputBar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.searchBox .inputBar input{
+    margin-left: 5px;
+    margin-top: 2px;
+    width: 740px;
+    border: none;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+/* login */
+.loginIcon {
+    background-color:#1F8AED;
+    color: white;
+    margin-top: 15px;
+    width: 40px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.loginIcon i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.loginIcon .option {
+    background-color: white;
+    width: 100px;
+    height: 135px;
+    color: black;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.loginIcon:hover{
+    height: 135px;
+    width: 100px;
+}
+
+.loginIcon .option button{
+    margin-top: 6px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.loginIcon .option button:hover {
+    background-color:#87CEFA;
+}
+
+.loginIcon i::after {
+    content: '';
+    background-color: white;
+    width: 9px;
+    height: 9px;
+    margin-top: 54px;
+    margin-left: -25px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.formulario {
+    width: 430px;
+    margin: 200px auto;
+    border: solid white;
+    text-align: center;
+    border-radius: 10px;
+    height: 300px;
+}
+
+/*.formulario .inputname {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}*/
+
+.formulario .user {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+.formulario .password {
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+}
+
+/*.formulario .inputname input {
+    margin-left: 22px;
+}*/
+
+.formulario .user input {
+    margin-left: 24px;
+}
+
+.formulario .password input {
+    margin-left: 18px;
+}
+
+.formulario h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.formulario input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+.formulario .enviar {
+    margin-left: 72px;
+    background-color: #69DE75;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario .enviar:hover {
+    border: solid #2E8B57;
+}
+
+.formulario p {
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.formulario p a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Estante de livros*/
+
+.books {
+    margin-top: 100px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+.books .book {
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
+.books p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.books img {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 5%;
+}
+
+.books.afastar {
+    margin-left: 230px;
+}
+
+.books .book .titleBook {
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 2px;
+}
+
+.books .book .writer {
+    margin-top: 2%;
+    margin-left: 5px;
+    margin-bottom: 10%;
+}
+
+.books .book .status {
+    background-color: #69DE75;
+    border-radius: 20px;
+    width: 75%;
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 5%;
+}
+
+/* quando logado */
+.searchLogin .user {
+    color: white;
+    margin-top: 30px;
+    position: absolute;
+    margin-left: 70%;
+}
